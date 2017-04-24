@@ -13,7 +13,7 @@ file.remove("fulldata.zip")
 #transform date into R date
 powermini <- subset(power, Date == "1/2/2007" | Date == "2/2/2007")
 
-#open the png dev
+#open the png device
 png("plot1.png", width=480, height=480)
 #plot the histogram
 hist(powermini$Global_active_power, col="red", main="Global Active Power", 
